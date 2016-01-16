@@ -1,0 +1,29 @@
+{
+  "name": "ejs-webpack-builder",
+  "version": "1.0.0",
+  "description": "Webpack plugin to build EJS files",
+  "author": {
+    "name": "Jonathan Argentiero",
+    "email": "jonathan.argentiero@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^2.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathanargentiero/ejs-webpack-builder.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "webpack-plugin",
+    "ejs",
+    "ejs-builder",
+    "ejs-webpack-builder",
+    "html"
+  ]
+}
