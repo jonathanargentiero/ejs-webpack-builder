@@ -38,7 +38,7 @@ You can configure your compilation with additional parameters:
     },
     target: {
       name: 'index.html',
-      dir: './public'
+      dir: 'views/'
     },
     parameters: {
       title: 'my site title',
