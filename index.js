@@ -30,7 +30,7 @@ function ejsBuilder(options) {
         compileOptions.sourceDir = file.source.dir || root;
       }
       if (typeof file.target != 'undefined') {
-        compileOptions.targtName = file.target.name || '';
+        compileOptions.targetName = file.target.name || '';
         compileOptions.targetDir = file.target.dir || root;
       }
     }

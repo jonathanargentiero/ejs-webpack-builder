@@ -1,6 +1,6 @@
 {
   "name": "ejs-webpack-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack plugin to build EJS files",
   "author": {
     "name": "Jonathan Argentiero",
