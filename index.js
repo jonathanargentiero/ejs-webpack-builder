@@ -46,7 +46,7 @@ ejsBuilder.prototype.apply = function(compiler) {
 				compileOptions.parameters.filename=sourceFilePath;
 				var targetFile = ejs.render(sourceFile, compileOptions.parameters);
 				var targetFileName = (compileOptions.targetName.length > 0)
-					? (compileOptions.targetDir + compileOptions.targetName)
+					? path.join(compileOptions.targetDir, compileOptions.targetName)
 				 	: compileOptions.sourceName.replace('.ejs','.html');
 				compilation.assets[targetFileName] = {
 					source: function() {
