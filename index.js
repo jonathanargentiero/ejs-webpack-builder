@@ -41,7 +41,9 @@ ejsBuilder.prototype.apply = function(compiler) {
 			}
 
 			if (compileOptions.sourceName.length > 0) {
-				var sourceFile = fs.readFileSync(path.join(compileOptions.sourceDir, compileOptions.sourceName), { encoding: compileOptions.encoding });
+				var sourceFilePath=path.join(compileOptions.sourceDir, compileOptions.sourceName);
+				var sourceFile = fs.readFileSync(sourceFilePath, { encoding: compileOptions.encoding});
+				compileOptions.parameters.filename=sourceFilePath;
 				var targetFile = ejs.render(sourceFile, compileOptions.parameters);
 				var targetFileName = (compileOptions.targetName.length > 0)
 					? (compileOptions.targetDir + compileOptions.targetName)
